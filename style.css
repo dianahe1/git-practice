@@ -56,7 +56,7 @@ html, body {
 				}
 
 
-/* ABOUT HEADER TEXT */
+/* ABOUT INTRO */
 
   .about-intro {
     display: flex;
@@ -92,6 +92,7 @@ html, body {
   #purdue-link {
     height: 14px;
   }
+
 
 /* ABOUT PROJECTS */
 
@@ -132,15 +133,19 @@ html, body {
   }
   .project-header {
     font-size: 23px;
-    margin: 20px 0 10px 0;
+    margin: 25px 0 20px 0;
     text-align: center;
+  }
+  .project-time {
+    margin: 0;
+    color: #5a5a5b;
   }
   .project-bio {
     font-size: 15px;
   }
 
 
-/* HOBBIES */
+/* ABOUT HOBBIES */
 
   #hobbies-header {
     color: #352618;
@@ -149,24 +154,50 @@ html, body {
     font-family: Recoleta;
     font-weight: 700;
   }
-  .hobbies {
+  .hobby-section {
+    margin-top: 30px;
+    padding-bottom: 75px;
+  }
+  .hobby-pics {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 30px;
-    padding-bottom: 50px;
-  }
-  .hobby {
-    text-align: center;
-    width: 25%;
+    flex-wrap: wrap;
   }
   .hobby-img {
     border-radius: 20px;
-    width: 70%;
+    width: 15%;
+    margin: 15px;
+  }
+  .hobby-text {
+    margin-left: 85px;
   }
 
 
+/* ABOUT FOOTER */
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0 10px 70px;
+    background-color: #2a2a2a;
+  }
+  .footer-item {
+    font-size: 20px;
+    color: #e2e0e0;
+    text-decoration: none;
+    padding: 20px;
+  }
+  .footer-item:hover {
+    text-decoration: underline;
+  }
+
 @media only screen and (max-width: 620px) {
+  .about-header, #projects-header, #hobbies-header, .hobby-text {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
   .about-intro {
     display: flex;
     flex-direction: column;
@@ -180,5 +211,9 @@ html, body {
   .project-card {
     width: 72%;
     margin: 15px 0 15px 0;
+  }
+  .hobby-img {
+    width: 36%;
+    margin: 15px;
   }
 }
