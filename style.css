@@ -1,0 +1,169 @@
+/* FONTS */
+@font-face {
+  font-family: Recoleta;
+  src: url("assets/fonts/Recoleta-Regular.otf");
+}
+
+html, body {
+  background: linear-gradient(#e0e7ff, #faf6f4);
+  background-attachment: fixed;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  font-family: century-gothic;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
+/* NAV BAR */
+
+  .nav {
+  		display: block;
+  		top: 20px;
+  		text-align: center;
+      margin: auto;
+      margin-top:18px;
+  }
+
+  .nav > ul {
+    display: inline-block;
+    border-radius: 12px;
+    padding: 0 1em 0 1em;
+    background: #f3f6fd;
+  }
+
+			.nav > ul > li {
+				display: inline-block;
+				text-align: center;
+				padding: 0 1.5em 0 1.5em;
+			}
+
+				.nav > ul > li > a {
+					display: block;
+					color: #1b1b1b;
+					text-transform: uppercase;
+					text-decoration: none;
+					font-size: 16px;
+					letter-spacing: 2px;
+					height: 45px;
+					line-height: 45px;
+          font-family:century-gothic;
+				}
+
+				.nav > ul > li:hover > a {
+					color: #86a6fe;
+				}
+
+
+/* ABOUT HEADER TEXT */
+
+  .about-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin-top: 3.5%;
+  }
+  #about-pic {
+    border-radius: 25px;
+    border: 5px solid #f6f6f6;
+    height: 155px;
+  }
+  .about-header {
+    color: #352618;
+    font-size: 38px;
+    margin-left: 55px;
+    font-family: Recoleta;
+    font-weight: 700;
+  }
+  .about-bio {
+    font-size: 19px;
+    line-height: 35px;
+    margin-left: 55px;
+  }
+  .inline-link {
+    text-decoration: none;
+    color: #5d72e0;
+  }
+  .inline-link:hover {
+    text-decoration: underline;
+  }
+  #purdue-link {
+    height: 14px;
+  }
+
+/* ABOUT PROJECTS */
+
+  #projects-header {
+    color: #352618;
+    font-size: 38px;
+    margin: 80px 0 0 85px;
+    font-family: Recoleta;
+    font-weight: 700;
+  }
+  .projects-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom:28px;
+  }
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f9faff;
+    border-radius: 20px;
+    width: 22%;
+    padding: 20px;
+    box-shadow: 0 0 5px #d9e1ec;
+    margin: 0 15px 0 15px;
+  }
+  .project-card a {
+    text-decoration: none;
+    color: #5d72e0;
+  }
+  #project-pic {
+    width: 30%;
+    border-radius: 30px;
+  }
+  .project-header {
+    font-size: 23px;
+    margin: 20px 0 10px 0;
+    text-align: center;
+  }
+  .project-bio {
+    font-size: 15px;
+  }
+
+
+/* HOBBIES */
+
+  #hobbies-header {
+    color: #352618;
+    font-size: 38px;
+    margin: 80px 0 0 85px;
+    font-family: Recoleta;
+    font-weight: 700;
+  }
+
+
+@media only screen and (max-width: 620px) {
+  .about-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  }
+  .projects-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-card {
+    width: 72%;
+    margin: 15px 0 15px 0;
+  }
+}
